@@ -1,0 +1,30 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+span,
+a,
+p,
+li {
+  font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 15px;
+}

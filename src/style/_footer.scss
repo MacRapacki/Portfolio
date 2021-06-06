@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  height: $nav-height;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  p {
+    color: white;
+    font-size: 15px;
+  }
+}
