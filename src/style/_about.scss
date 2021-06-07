@@ -10,7 +10,7 @@
     }
   }
   .about_text_container {
-    max-width: 650px;
+    max-width: $text-width;
     margin-top: 30px;
 
     .about_contact_btn {

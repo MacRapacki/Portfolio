@@ -1,0 +1,33 @@
+.key_skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .key_skills_text {
+    margin: 0 auto;
+    max-width: $text-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .key_skills_cards {
+    max-width: $text-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .key_skills_card {
+      margin: 20px;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      background-color: $bg-color;
+      width: 150px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
