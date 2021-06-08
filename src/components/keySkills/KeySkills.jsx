@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useContainer } from "./container";
+import { useContainer } from "./keySkillsContainer";
 
 const KeySkills = () => {
   const { skills } = useContainer();

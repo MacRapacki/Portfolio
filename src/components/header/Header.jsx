@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 
+import { useHeaderContainer } from "./headerContainer";
+
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
+
+  const { copyEmailToClipboard, showCopyMessage, isTextCopied } =
+    useHeaderContainer();
 
   const handleNavBtn = () => {
     setNavActive(!navActive);
   };
+
   return (
     <header>
       <div className="header-bg"></div>
@@ -43,7 +49,17 @@ const Header = () => {
                 <i class="fab fa-github"></i>
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                showCopyMessage();
+                copyEmailToClipboard();
+              }}
+            >
+              {isTextCopied && (
+                <div className="header_social_email_msg">
+                  mac.rapacki@gmail.com Copied!
+                </div>
+              )}
               <a href="#">
                 <i class="fas fa-envelope"></i>
               </a>

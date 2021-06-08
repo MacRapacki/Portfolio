@@ -266,6 +266,24 @@ header .header_text-container .header_social ul li a i {
   font-size: 22px;
 }
 
+.header_social_email_msg {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  background-color: white;
+  color: black;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 25%, 65% 24%, 35% 0, 32% 23%, 0 24%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 25%, 65% 24%, 35% 0, 32% 23%, 0 24%);
+  width: 220px;
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-top: 16px;
+  text-align: center;
+  background-color: lightyellow;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +385,7 @@ header .header_text-container .header_social ul li a i {
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background-color: #fafafa;
   width: 150px;
-  height: 120px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
