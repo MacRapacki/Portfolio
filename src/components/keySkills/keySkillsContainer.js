@@ -7,7 +7,7 @@ import ReactImg from "../../images/skills/icons8-react-native-100.png";
 import ReduxImg from "../../images/skills/icons8-redux-100.png";
 import SassImg from "../../images/skills/icons8-sass-100.png";
 
-export const useContainer = () => {
+export const useKeySkillsContainer = () => {
   const skills = [
     {
       img: HtmlImg,

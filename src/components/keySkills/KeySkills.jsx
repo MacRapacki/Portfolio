@@ -1,9 +1,9 @@
 import React from "react";
 
-import { useContainer } from "./keySkillsContainer";
+import { useKeySkillsContainer } from "./keySkillsContainer";
 
 const KeySkills = () => {
-  const { skills } = useContainer();
+  const { skills } = useKeySkillsContainer();
 
   return (
     <section className="key_skills">

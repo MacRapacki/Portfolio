@@ -15,12 +15,13 @@ li {
 
 h2 {
   font-size: 35px;
-  margin: 15px 0;
+  margin: 25px 0;
+  text-align: center;
 }
 
 h3 {
   font-size: 30px;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 h4 {
@@ -30,7 +31,7 @@ h4 {
 section {
   width: 100%;
   position: relative;
-  padding: 20px 15px;
+  padding: 30px 15px;
   &:nth-child(odd) {
     background-color: $bg-color;
   }

@@ -1,0 +1,54 @@
+.myWork {
+  max-width: $text-width;
+  margin: 0 auto;
+  .myWork_projects_wrapper {
+    .myWork_project {
+      margin: 20px 0;
+      .project_img {
+        position: relative;
+        overflow-y: hidden;
+        &:hover .project_links {
+          transform: translateY(0);
+        }
+        img {
+          width: 100%;
+          margin: 15px 0;
+        }
+        .project_links {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          transform: translateY(-100%);
+          background-color: rgba($color: #5a5a5a, $alpha: 0.7);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          transition: 0.2s all ease-out;
+          .project_link {
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 0 30px;
+            transition: 0.2s all ease-in;
+            &:hover {
+              background-color: white;
+            }
+            i {
+              font-size: 30px;
+              color: black;
+              padding: 20px 50px;
+            }
+          }
+        }
+      }
+      .porject_content {
+        .project_technologies {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
