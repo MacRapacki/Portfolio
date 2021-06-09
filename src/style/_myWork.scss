@@ -7,6 +7,9 @@
       .project_img {
         position: relative;
         overflow-y: hidden;
+        .project_title {
+          color: $main-blue;
+        }
         &:hover .project_links {
           transform: translateY(0);
         }
@@ -22,24 +25,30 @@
           width: 100%;
           height: 100%;
           transform: translateY(-100%);
-          background-color: rgba($color: #5a5a5a, $alpha: 0.7);
+          background-color: rgba($color: #000000, $alpha: 0.8);
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           transition: 0.2s all ease-out;
           .project_link {
-            border: 2px solid black;
+            border: 2px solid white;
             border-radius: 20px;
             margin: 0 30px;
+            background-color: $main-blue;
             transition: 0.2s all ease-in;
             &:hover {
               background-color: white;
+              border: 2px solid $main-blue;
+              & i {
+                color: $main-blue;
+              }
             }
             i {
               font-size: 30px;
-              color: black;
-              padding: 20px 50px;
+              color: white;
+              padding: 15px 40px;
+              transition: 0.2s all ease-in;
             }
           }
         }

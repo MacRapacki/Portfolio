@@ -243,7 +243,7 @@ header .header_text-container .header_social ul li::before {
           transform: translate(-50%, -55%);
   width: 0px;
   height: 0px;
-  background-color: black;
+  background-color: #4169e1;
   border-radius: 50%;
   z-index: -1;
   -webkit-transition: 0.15s ease-in;
@@ -318,7 +318,7 @@ header .header_text-container .header_social ul li a i {
   width: 165px;
   height: 65px;
   margin-top: 30px;
-  background-color: black;
+  background-color: #4169e1;
   font-size: 16px;
   color: white;
   font-weight: 500;
@@ -385,7 +385,7 @@ header .header_text-container .header_social ul li a i {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background-color: #fafafa;
-  width: 150px;
+  width: 140px;
   height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,6 +416,10 @@ header .header_text-container .header_social ul li a i {
   overflow-y: hidden;
 }
 
+.myWork .myWork_projects_wrapper .myWork_project .project_img .project_title {
+  color: #4169e1;
+}
+
 .myWork .myWork_projects_wrapper .myWork_project .project_img:hover .project_links {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -435,7 +439,7 @@ header .header_text-container .header_social ul li a i {
   height: 100%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  background-color: rgba(90, 90, 90, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,21 +458,29 @@ header .header_text-container .header_social ul li a i {
 }
 
 .myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link {
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 20px;
   margin: 0 30px;
+  background-color: #4169e1;
   -webkit-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in;
 }
 
 .myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover {
   background-color: white;
+  border: 2px solid #4169e1;
+}
+
+.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover i {
+  color: #4169e1;
 }
 
 .myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link i {
   font-size: 30px;
-  color: black;
-  padding: 20px 50px;
+  color: white;
+  padding: 15px 40px;
+  -webkit-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
 }
 
 .myWork .myWork_projects_wrapper .myWork_project .porject_content .project_technologies {
