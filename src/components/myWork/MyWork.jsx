@@ -13,27 +13,35 @@ const MyWork = () => {
         molestiae itaque cumque facere odit.
       </p>
       <div className="myWork_projects_wrapper">
-        <div className="myWork_project">
-          <div className="project_img">
-            {" "}
-            <h5 className="project_title">{projects[0].name.toUpperCase()}</h5>
-            <img src={projects[0].imgURL} alt="project screenshot" />{" "}
-            <div className="project_links">
-              <a href="#" className="project_link live">
-                <i class="fas fa-eye"></i>
-              </a>
-              <a href="#" className="project_link code">
-                <i class="fas fa-code"></i>
-              </a>
-            </div>
-          </div>
-          <div className="porject_content">
-            <p className="project_description">{projects[0].description}</p>
-            <p className="project_technologies">
-              {projects[0].technologies.map((item) => `#${item}, `)}
-            </p>
-          </div>
-        </div>
+        {projects.map(
+          ({ name, description, imgURL, demoURL, codeURL, technologies }) => {
+            return (
+              <div className="myWork_project">
+                <div className="project_img">
+                  {" "}
+                  <h5 className="project_title">{name.toUpperCase()}</h5>
+                  <img src={imgURL} alt="project screenshot" />{" "}
+                  <div className="project_links">
+                    <a href="#" className="project_link live">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="#" className="project_link code">
+                      <i class="fas fa-code"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="porject_content">
+                  <p className="project_description">{description}</p>
+                  <p className="project_technologies">
+                    {technologies.map((item) => (
+                      <span>#{item}, </span>
+                    ))}
+                  </p>
+                </div>
+              </div>
+            );
+          }
+        )}
       </div>
     </section>
   );

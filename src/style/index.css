@@ -12,19 +12,19 @@ a,
 p,
 li {
   font-family: "Poppins", "Montserrat", sans-serif;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 h2 {
   font-size: 35px;
-  margin: 25px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
 h3 {
   font-size: 30px;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 h4 {
@@ -313,7 +313,7 @@ header .header_text-container .header_social ul li a i {
 }
 
 .about_text_container {
-  max-width: 700px;
+  max-width: 1200px;
   margin-top: 30px;
 }
 
@@ -348,7 +348,7 @@ header .header_text-container .header_social ul li a i {
 
 .key_skills_text {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@ header .header_text-container .header_social ul li a i {
 }
 
 .key_skills_cards {
-  max-width: 700px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,21 +410,38 @@ header .header_text-container .header_social ul li a i {
 }
 
 .myWork_projects_wrapper {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .myWork_projects_wrapper .myWork_project {
-  margin: 20px 0;
+  margin: 45px 0;
+  border-bottom: 1.5px solid gray;
 }
 
 .myWork_projects_wrapper .myWork_project .project_img {
   position: relative;
   overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .myWork_projects_wrapper .myWork_project .project_img .project_title {
   color: #4169e1;
+  font-size: 25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .myWork_projects_wrapper .myWork_project .project_img:hover .project_links {
@@ -434,6 +451,7 @@ header .header_text-container .header_social ul li a i {
 
 .myWork_projects_wrapper .myWork_project .project_img img {
   width: 100%;
+  max-width: 600px;
   margin: 15px 0;
 }
 
@@ -491,13 +509,19 @@ header .header_text-container .header_social ul li a i {
 }
 
 .myWork_projects_wrapper .myWork_project .porject_content .project_technologies {
+  text-align: right;
   margin-top: 20px;
+}
+
+.myWork_projects_wrapper .myWork_project .porject_content .project_technologies span {
+  margin-right: 10px;
+  color: #4169e1;
 }
 
 .footer {
   width: 100%;
   height: 3.5rem;
-  background-color: black;
+  background-color: #4169e1;
   display: -ms-grid;
   display: grid;
   place-items: center;

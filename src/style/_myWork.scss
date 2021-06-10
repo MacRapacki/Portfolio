@@ -4,19 +4,30 @@
   &_projects_wrapper {
     max-width: $text-width;
     margin: 0 auto;
+
     .myWork_project {
-      margin: 20px 0;
+      margin: 45px 0;
+      border-bottom: 1.5px solid gray;
+
       .project_img {
         position: relative;
         overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         .project_title {
           color: $main-blue;
+          font-size: 25px;
+          align-self: flex-start;
         }
         &:hover .project_links {
           transform: translateY(0);
         }
         img {
           width: 100%;
+          max-width: 600px;
           margin: 15px 0;
         }
         .project_links {
@@ -33,12 +44,14 @@
           align-items: center;
           justify-content: center;
           transition: 0.2s all ease-out;
+
           .project_link {
             border: 2px solid white;
             border-radius: 20px;
             margin: 0 30px;
             background-color: $main-blue;
             transition: 0.2s all ease-in;
+
             &:hover {
               background-color: white;
               border: 2px solid $main-blue;
@@ -55,9 +68,15 @@
           }
         }
       }
+
       .porject_content {
         .project_technologies {
+          text-align: right;
           margin-top: 20px;
+          span {
+            margin-right: 10px;
+            color: $main-blue;
+          }
         }
       }
     }
