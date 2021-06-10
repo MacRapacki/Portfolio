@@ -11,6 +11,8 @@ a,
 p,
 li {
   font-family: "Poppins", "Montserrat", sans-serif;
+  max-width: $text-width;
+  margin: 0 auto;
 }
 
 h2 {

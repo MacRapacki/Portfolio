@@ -12,6 +12,8 @@ a,
 p,
 li {
   font-family: "Poppins", "Montserrat", sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h2 {
@@ -51,8 +53,8 @@ header {
 
 header .header-bg {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.6);
@@ -198,6 +200,7 @@ header .header_text-container span {
 header .header_text-container h1 {
   text-align: center;
   width: 100%;
+  color: whi;
 }
 
 header .header_text-container .header_social {
@@ -301,20 +304,20 @@ header .header_text-container .header_social ul li a i {
           justify-content: center;
 }
 
-.about .about_image {
+.about_image {
   max-width: 600px;
 }
 
-.about .about_image img {
+.about_image img {
   width: 100%;
 }
 
-.about .about_text_container {
+.about_text_container {
   max-width: 700px;
   margin-top: 30px;
 }
 
-.about .about_text_container .about_contact_btn {
+.about_text_container .about_contact_btn {
   width: 165px;
   height: 65px;
   margin-top: 30px;
@@ -343,7 +346,7 @@ header .header_text-container .header_social ul li a i {
           align-items: center;
 }
 
-.key_skills .key_skills_text {
+.key_skills_text {
   margin: 0 auto;
   max-width: 700px;
   display: -webkit-box;
@@ -361,7 +364,7 @@ header .header_text-container .header_social ul li a i {
           align-items: center;
 }
 
-.key_skills .key_skills_cards {
+.key_skills_cards {
   max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,7 +383,7 @@ header .header_text-container .header_social ul li a i {
       flex-wrap: wrap;
 }
 
-.key_skills .key_skills_cards .key_skills_card {
+.key_skills_cards .key_skills_card {
   margin: 20px;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -403,42 +406,46 @@ header .header_text-container .header_social ul li a i {
 }
 
 .myWork {
+  margin: 0 auto;
+}
+
+.myWork_projects_wrapper {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project {
+.myWork_projects_wrapper .myWork_project {
   margin: 20px 0;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img {
+.myWork_projects_wrapper .myWork_project .project_img {
   position: relative;
   overflow-y: hidden;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_title {
+.myWork_projects_wrapper .myWork_project .project_img .project_title {
   color: #4169e1;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img:hover .project_links {
+.myWork_projects_wrapper .myWork_project .project_img:hover .project_links {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img img {
+.myWork_projects_wrapper .myWork_project .project_img img {
   width: 100%;
   margin: 15px 0;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links {
+.myWork_projects_wrapper .myWork_project .project_img .project_links {
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
   background-color: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +464,7 @@ header .header_text-container .header_social ul li a i {
   transition: 0.2s all ease-out;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link {
+.myWork_projects_wrapper .myWork_project .project_img .project_links .project_link {
   border: 2px solid white;
   border-radius: 20px;
   margin: 0 30px;
@@ -466,16 +473,16 @@ header .header_text-container .header_social ul li a i {
   transition: 0.2s all ease-in;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover {
+.myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover {
   background-color: white;
   border: 2px solid #4169e1;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover i {
+.myWork_projects_wrapper .myWork_project .project_img .project_links .project_link:hover i {
   color: #4169e1;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link i {
+.myWork_projects_wrapper .myWork_project .project_img .project_links .project_link i {
   font-size: 30px;
   color: white;
   padding: 15px 40px;
@@ -483,7 +490,7 @@ header .header_text-container .header_social ul li a i {
   transition: 0.2s all ease-in;
 }
 
-.myWork .myWork_projects_wrapper .myWork_project .porject_content .project_technologies {
+.myWork_projects_wrapper .myWork_project .porject_content .project_technologies {
   margin-top: 20px;
 }
 

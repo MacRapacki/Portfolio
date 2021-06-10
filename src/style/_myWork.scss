@@ -1,7 +1,9 @@
 .myWork {
-  max-width: $text-width;
+  // max-width: $text-width;
   margin: 0 auto;
-  .myWork_projects_wrapper {
+  &_projects_wrapper {
+    max-width: $text-width;
+    margin: 0 auto;
     .myWork_project {
       margin: 20px 0;
       .project_img {
@@ -24,7 +26,7 @@
           top: 0;
           width: 100%;
           height: 100%;
-          transform: translateY(-100%);
+          transform: translateY(-105%);
           background-color: rgba($color: #000000, $alpha: 0.8);
           display: flex;
           flex-direction: row;
