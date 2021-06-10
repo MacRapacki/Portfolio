@@ -503,7 +503,7 @@ header .header_text-container .header_social ul li a i {
 .myWork_projects_wrapper .myWork_project .project_img .project_links .project_link i {
   font-size: 30px;
   color: white;
-  padding: 15px 40px;
+  padding: 10px 30px;
   -webkit-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in;
 }
