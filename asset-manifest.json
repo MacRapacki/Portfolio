@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8fa21156.chunk.css",
+    "main.js": "/Portfolio/static/js/main.debdf997.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.debdf997.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.88fa2409.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.88fa2409.js.map",
+    "static/js/2.4d24dce1.chunk.js": "/Portfolio/static/js/2.4d24dce1.chunk.js",
+    "static/js/2.4d24dce1.chunk.js.map": "/Portfolio/static/js/2.4d24dce1.chunk.js.map",
+    "static/js/3.6ca42313.chunk.js": "/Portfolio/static/js/3.6ca42313.chunk.js",
+    "static/js/3.6ca42313.chunk.js.map": "/Portfolio/static/js/3.6ca42313.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.8fa21156.chunk.css.map": "/Portfolio/static/css/main.8fa21156.chunk.css.map",
+    "static/js/2.4d24dce1.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.4d24dce1.chunk.js.LICENSE.txt",
+    "static/media/about.081274de.png": "/Portfolio/static/media/about.081274de.png",
+    "static/media/index.css": "/Portfolio/static/media/bg-header.9be17895.jpg",
+    "static/media/landingPage.c7565221.png": "/Portfolio/static/media/landingPage.c7565221.png",
+    "static/media/petClinic.c43d0258.png": "/Portfolio/static/media/petClinic.c43d0258.png",
+    "static/media/premierLeagueStats.ec46d66e.png": "/Portfolio/static/media/premierLeagueStats.ec46d66e.png",
+    "static/media/saro.2d4449ad.png": "/Portfolio/static/media/saro.2d4449ad.png",
+    "static/media/weightLossPlanner.1a40d747.png": "/Portfolio/static/media/weightLossPlanner.1a40d747.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88fa2409.js",
+    "static/js/2.4d24dce1.chunk.js",
+    "static/css/main.8fa21156.chunk.css",
+    "static/js/main.debdf997.chunk.js"
+  ]
+}
