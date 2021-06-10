@@ -1,0 +1,65 @@
+.contact {
+  &_form {
+    max-width: $text-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // min-height: 450px;
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+      color: $main-blue;
+      font-size: 18px;
+      max-width: 400px;
+      margin: 20px 0;
+      input {
+        width: 100%;
+        padding: 10px;
+        background-color: lightgrey;
+      }
+      span {
+        width: 100%;
+        justify-self: flex-start;
+        padding-left: 10px;
+      }
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        max-width: 400px;
+        background-color: lightgrey;
+        resize: none;
+      }
+    }
+    .submit_button {
+      width: 165px;
+      height: 65px;
+      margin-top: 30px;
+      background-color: $main-blue;
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s linear;
+      &:hover {
+        border: 2px solid $main-blue;
+        background-color: white;
+        color: $main-blue;
+      }
+    }
+  }
+}
+
+.errorMessage {
+  color: red;
+  font-weight: 300;
+  font-size: 16px;
+}
