@@ -6,26 +6,24 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-  //   z-index: -1;
+
   .header-bg {
-    // content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.6);
-    // z-index: -1;
   }
 
-  //   NAV
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: $nav-height;
-    background-color: white;
+    background-color: transparent;
+    z-index: 2;
 
     .header_line {
       position: absolute;
@@ -47,16 +45,15 @@ header {
       position: fixed;
       right: -60%;
       top: 0;
-      margin-top: $nav-height;
-      background-color: white;
-      height: calc(100% - #{$nav-height});
+      background-color: rgba($color: #ffffff, $alpha: 0.95);
+      height: 100%;
       width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       transition: 0.3s ease-in;
-      z-index: 1;
+      z-index: 0;
       &.active {
         right: 0;
       }

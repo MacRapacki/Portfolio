@@ -61,12 +61,13 @@ header .header-bg {
 }
 
 header nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 3.5rem;
-  background-color: white;
+  background-color: transparent;
+  z-index: 2;
 }
 
 header nav .header_line {
@@ -85,9 +86,8 @@ header nav ul {
   position: fixed;
   right: -60%;
   top: 0;
-  margin-top: 3.5rem;
-  background-color: white;
-  height: calc(100% - 3.5rem);
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 100%;
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +103,7 @@ header nav ul {
           align-items: center;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  z-index: 1;
+  z-index: 0;
 }
 
 header nav ul.active {
