@@ -1,23 +1,31 @@
 import React from "react";
 
-import { Formik } from "formik";
+import { Formik, Form } from "formik";
 import { formikValidationSchema } from "./validationSchema";
 import { FORMIK_HELPER } from "./constans";
+
+import { useContactContainer } from "./contactContainer";
 
 import ErrorMessage from "./ErrorMessage";
 
 const ContactForm = () => {
+  const { sendEmail } = useContactContainer();
   return (
     <Formik
-      initialValues={{ [FORMIK_HELPER.NAME]: "", [FORMIK_HELPER.EMAIL]: "" }}
+      initialValues={{
+        [FORMIK_HELPER.NAME]: "",
+        [FORMIK_HELPER.EMAIL]: "",
+        [FORMIK_HELPER.MESSAGE]: "",
+      }}
       validationSchema={formikValidationSchema}
       validateOnChange={true}
-      onSubmit={(values) => {
-        console.log(values);
+      onSubmit={(values, { resetForm }) => {
+        sendEmail(values);
+        resetForm({});
       }}
     >
       {({ values, errors, handleChange, handleSubmit, isValid }) => (
-        <form onSubmit={handleSubmit} className="contact_form">
+        <Form onSubmit={handleSubmit} className="contact_form">
           {" "}
           <label htmlFor="name">
             <span>Name</span>
@@ -52,9 +60,9 @@ const ContactForm = () => {
             <ErrorMessage message={errors[FORMIK_HELPER.MESSAGE]} />
           </label>
           <button type="submit" disabled={!isValid} className="submit_button">
-            Submit
+            Send
           </button>
-        </form>
+        </Form>
       )}
     </Formik>
   );

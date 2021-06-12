@@ -584,6 +584,7 @@ header .header_text-container .header_social ul li a i {
   max-width: 400px;
   background-color: lightgrey;
   resize: none;
+  padding: 10px;
 }
 
 .contact_form .submit_button {
