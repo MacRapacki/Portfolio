@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <div className="header-bg"></div>
       <nav>
-        <div className="header_line"></div>
+        {/* <div className="header_line"></div> */}
         <ul className={`${navActive && "active"}`}>
           <li>Home</li>
           <li>About</li>
