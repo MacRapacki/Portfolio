@@ -1,8 +1,8 @@
 import emailjs from "emailjs-com";
 
 export const useContactContainer = () => {
-  const sendEmail = (formValues) => {
-    emailjs
+  const sendEmail = async (formValues) => {
+    await emailjs
       .send(
         `${process.env.REACT_APP_EMAILJS_SERVICEID}`,
         `${process.env.REACT_APP_EMAILJS_TEMPLATEID}`,
