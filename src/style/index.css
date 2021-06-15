@@ -102,18 +102,6 @@ header nav {
   z-index: 2;
 }
 
-header nav .header_line {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 80%;
-  height: 0.2rem;
-  background: #020024;
-  background: linear-gradient(117deg, #020024 0%, rgba(230, 230, 230, 0) 100%, #00d4ff 100%);
-}
-
 header nav ul {
   position: fixed;
   right: -60%;
@@ -297,6 +285,7 @@ header .header_text-container .header_social ul li:hover::before {
 
 header .header_text-container .header_social ul li a {
   color: inherit !important;
+  padding: 10px;
 }
 
 header .header_text-container .header_social ul li a i {
@@ -458,6 +447,13 @@ header .header_text-container .header_social ul li a i {
   border-bottom: 1.5px solid gray;
 }
 
+.myWork_projects_wrapper .myWork_project .project_title {
+  color: #4169e1;
+  font-size: 25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .myWork_projects_wrapper .myWork_project .project_img {
   position: relative;
   overflow-y: hidden;
@@ -476,16 +472,9 @@ header .header_text-container .header_social ul li a i {
           align-items: center;
 }
 
-.myWork_projects_wrapper .myWork_project .project_img .project_title {
-  color: #4169e1;
-  font-size: 25px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 .myWork_projects_wrapper .myWork_project .project_img:hover .project_links {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .myWork_projects_wrapper .myWork_project .project_img img {
@@ -497,12 +486,13 @@ header .header_text-container .header_social ul li a i {
 .myWork_projects_wrapper .myWork_project .project_img .project_links {
   display: block;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
   width: 100%;
+  max-width: 600px;
   height: 100%;
-  -webkit-transform: translateY(-105%);
-          transform: translateY(-105%);
+  -webkit-transform: translate(-50%, -105%);
+          transform: translate(-50%, -105%);
   background-color: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;

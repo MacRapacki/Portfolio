@@ -17,15 +17,23 @@ const MyWork = () => {
           ({ name, description, imgURL, demoURL, codeURL, technologies }) => {
             return (
               <div className="myWork_project">
+                <h5 className="project_title">{name.toUpperCase()}</h5>
                 <div className="project_img">
                   {" "}
-                  <h5 className="project_title">{name.toUpperCase()}</h5>
                   <img src={imgURL} alt="project screenshot" />{" "}
                   <div className="project_links">
-                    <a href="#" className="project_link live">
+                    <a
+                      href={demoURL}
+                      className="project_link live"
+                      target="blank"
+                    >
                       <i class="fas fa-eye"></i>
                     </a>
-                    <a href="#" className="project_link code">
+                    <a
+                      href={codeURL}
+                      className="project_link code"
+                      target="blank"
+                    >
                       <i class="fas fa-code"></i>
                     </a>
                   </div>

@@ -34,18 +34,21 @@ const Header = () => {
         <div className="header_social">
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/maciej.rapacki/" target="blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/maciej-rapacki-30b653142/"
+                target="blank"
+              >
                 {" "}
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/MacRapacki" target="blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
@@ -60,9 +63,9 @@ const Header = () => {
                   mac.rapacki@gmail.com Copied!
                 </div>
               )}
-              <a href="#">
+              <div>
                 <i class="fas fa-envelope"></i>
-              </a>
+              </div>
             </li>
           </ul>
         </div>

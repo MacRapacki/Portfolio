@@ -25,21 +25,21 @@ header {
     background-color: transparent;
     z-index: 2;
 
-    .header_line {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 80%;
-      height: 0.2rem;
-      background: rgb(2, 0, 36);
-      background: linear-gradient(
-        117deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(230, 230, 230, 0) 100%,
-        rgba(0, 212, 255, 1) 100%
-      );
-    }
+    // .header_line {
+    //   position: absolute;
+    //   left: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 80%;
+    //   height: 0.2rem;
+    //   background: rgb(2, 0, 36);
+    //   background: linear-gradient(
+    //     117deg,
+    //     rgba(2, 0, 36, 1) 0%,
+    //     rgba(230, 230, 230, 0) 100%,
+    //     rgba(0, 212, 255, 1) 100%
+    //   );
+    // }
 
     ul {
       position: fixed;
@@ -171,6 +171,7 @@ header {
           }
           a {
             color: inherit !important;
+            padding: 10px;
 
             i {
               font-size: 22px;

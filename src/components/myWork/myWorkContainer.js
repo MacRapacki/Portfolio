@@ -11,8 +11,8 @@ export const useMyWorkContainer = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
       imgURL: SaroImg,
-      demoURL: "",
-      codeURL: "",
+      demoURL: "https://dev--i-saro.netlify.app/",
+      codeURL: "https://github.com/michalskirobert/saro-react",
       technologies: [
         "react",
         "redux",
@@ -28,8 +28,8 @@ export const useMyWorkContainer = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
       imgURL: LandingPageImg,
-      demoURL: "",
-      codeURL: "",
+      demoURL: "https://macrapacki.github.io/Landing-Page/",
+      codeURL: "https://github.com/MacRapacki/Landing-Page",
       technologies: ["html", "sass", "javascript"],
     },
     {
@@ -37,8 +37,8 @@ export const useMyWorkContainer = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
       imgURL: PetClinic,
-      demoURL: "",
-      codeURL: "",
+      demoURL: "https://macrapacki-petclinic.netlify.app/",
+      codeURL: "https://github.com/MacRapacki/pet-clinic-gatsby",
       technologies: [
         "gatsby",
         "css - scss modules",
@@ -52,8 +52,8 @@ export const useMyWorkContainer = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
       imgURL: PremierLeagueStats,
-      demoURL: "",
-      codeURL: "",
+      demoURL: "https://macrapacki.github.io/Premier-League-stats/",
+      codeURL: "https://github.com/MacRapacki/Premier-League-stats",
       technologies: ["react", "api", "sass"],
     },
     {
@@ -61,8 +61,8 @@ export const useMyWorkContainer = () => {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
       imgURL: WeightLossPlanner,
-      demoURL: "",
-      codeURL: "",
+      demoURL: "https://macrapacki.github.io/Weight-Loss-Planner/",
+      codeURL: "https://github.com/MacRapacki/Weight-Loss-Planner",
       technologies: ["html", "css", "javascript"],
     },
   ];
