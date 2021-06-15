@@ -1,7 +1,7 @@
 import SaroImg from "../../images/myWork/saro.png";
 import LandingPageImg from "../../images/myWork/landingPage.png";
 import PetClinic from "../../images/myWork/petClinic.png";
-import PremierLeagueStats from "../../images/myWork/premierLeagueStats.png";
+import PremierLeagueStats from "../../images/myWork/PremierLeagueStats.png";
 import WeightLossPlanner from "../../images/myWork/weightLossPlanner.png";
 
 export const useMyWorkContainer = () => {
