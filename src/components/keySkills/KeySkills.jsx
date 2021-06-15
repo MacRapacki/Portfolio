@@ -6,7 +6,7 @@ const KeySkills = () => {
   const { skills } = useKeySkillsContainer();
 
   return (
-    <section className="key_skills">
+    <section className="key_skills" id="03">
       <div className="key_skills_text">
         <h2>Key Skills</h2>
         <p>

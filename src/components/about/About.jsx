@@ -3,7 +3,7 @@ import Pic from "../../images/about.png";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="02">
       <h2>About me</h2>
       <div className="about_image">
         <img src={Pic} alt="developer" />

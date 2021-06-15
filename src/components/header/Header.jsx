@@ -13,16 +13,36 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header id="01">
       <div className="header-bg"></div>
       <nav>
-        {/* <div className="header_line"></div> */}
         <ul className={`${navActive && "active"}`}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Key Skills</li>
-          <li>My Work</li>
-          <li>Contact</li>
+          <li>
+            <a href="#01" onClick={handleNavBtn}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#02" onClick={handleNavBtn}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#03" onClick={handleNavBtn}>
+              Key Skills
+            </a>
+          </li>
+          <li>
+            <a href="#04" onClick={handleNavBtn}>
+              My Wor
+            </a>
+            k
+          </li>
+          <li>
+            <a href="#05" onClick={handleNavBtn}>
+              Contact
+            </a>
+          </li>
         </ul>
         <button type="button" className="header_btn" onClick={handleNavBtn}>
           <i class="fas fa-bars"></i>
@@ -30,7 +50,9 @@ const Header = () => {
       </nav>
       <div className="header_text-container">
         <span>Hi! I'm Maciej.</span>
-        <h1>Front End Developer</h1>
+        <h1>
+          <span>Front End Developer</span>
+        </h1>
         <div className="header_social">
           <ul>
             <li>

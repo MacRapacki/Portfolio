@@ -23,6 +23,7 @@
         width: 100%;
         padding: 10px;
         background-color: lightgrey;
+        border: 1px solid $main-blue;
       }
       span {
         width: 100%;
@@ -37,6 +38,7 @@
         background-color: lightgrey;
         resize: none;
         padding: 10px;
+        border: 1px solid $main-blue;
       }
     }
     .submit_button {
