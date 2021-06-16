@@ -60,6 +60,60 @@
       }
     }
   }
+  &_social {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 500px;
+      margin: 50px auto 0 auto;
+
+      li {
+        position: relative;
+        list-style: none;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        transition: 0.15s ease-in;
+        display: grid;
+        place-items: center;
+        color: $main-blue;
+        margin: 0 20px;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -55%);
+          width: 0px;
+          height: 0px;
+          background-color: $main-blue;
+          border-radius: 50%;
+          z-index: -1;
+          transition: 0.15s ease-in;
+        }
+        &:hover {
+          color: white;
+          &::before {
+            width: 45px;
+            height: 45px;
+          }
+        }
+        a {
+          color: inherit !important;
+          padding: 10px;
+
+          i {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .errorMessage {

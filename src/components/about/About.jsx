@@ -17,9 +17,9 @@ const About = () => {
           quos fugit sapiente, mollitia optio maiores vero, quisquam quod
           praesentium. Sunt.
         </p>
-        <button type="button" className="about_contact_btn">
+        <a href="#05" className="about_contact_btn">
           Hire me
-        </button>
+        </a>
       </div>
     </section>
   );

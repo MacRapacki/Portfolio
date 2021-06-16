@@ -7,10 +7,17 @@
     .myWork_project {
       margin: 45px 0;
       border-bottom: 1.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
       .project_title {
         color: $main-blue;
         font-size: 25px;
-        align-self: flex-start;
+        width: 100%;
+        max-width: 600px;
+        text-align: left;
       }
       .project_img {
         position: relative;

@@ -368,10 +368,14 @@ header .header_text-container .header_social ul li a i {
   margin-top: 30px;
 }
 
+.about_text_container h3 {
+  color: #4169e1;
+}
+
 .about_text_container .about_contact_btn {
   width: 165px;
   height: 65px;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
   background-color: #4169e1;
   font-size: 16px;
   color: white;
@@ -381,6 +385,10 @@ header .header_text-container .header_social ul li a i {
   cursor: pointer;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
 }
 
 .about_text_container .about_contact_btn:hover {
@@ -476,13 +484,27 @@ header .header_text-container .header_social ul li a i {
 .myWork_projects_wrapper .myWork_project {
   margin: 45px 0;
   border-bottom: 1.5px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .myWork_projects_wrapper .myWork_project .project_title {
   color: #4169e1;
   font-size: 25px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
 }
 
 .myWork_projects_wrapper .myWork_project .project_img {
@@ -663,6 +685,79 @@ header .header_text-container .header_social ul li a i {
   border: 2px solid #4169e1;
   background-color: white;
   color: #4169e1;
+}
+
+.contact_social {
+  width: 100%;
+}
+
+.contact_social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto 0 auto;
+}
+
+.contact_social ul li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #4169e1;
+  margin: 0 20px;
+}
+
+.contact_social ul li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  width: 0px;
+  height: 0px;
+  background-color: #4169e1;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
+.contact_social ul li:hover {
+  color: white;
+}
+
+.contact_social ul li:hover::before {
+  width: 45px;
+  height: 45px;
+}
+
+.contact_social ul li a {
+  color: inherit !important;
+  padding: 10px;
+}
+
+.contact_social ul li a i {
+  font-size: 22px;
 }
 
 .errorMessage {
