@@ -24,6 +24,9 @@ header {
     height: $nav-height;
     background-color: transparent;
     z-index: 2;
+    @media screen and (min-width: 1000px) {
+      background-color: white;
+    }
 
     ul {
       position: fixed;
@@ -38,6 +41,17 @@ header {
       align-items: center;
       transition: 0.3s ease-in;
       z-index: 0;
+      @media screen and (min-width: 1000px) {
+        left: 0;
+        right: 0;
+        height: $nav-height;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+        background-color: transparent;
+        margin: 0 auto;
+      }
       &.active {
         right: 0;
       }
@@ -96,6 +110,9 @@ header {
       border: 1px solid lightgray;
       transition: 0.25s all ease-in;
       color: $main-blue;
+      @media screen and (min-width: 1000px) {
+        display: none;
+      }
       &:hover {
         border: 1px solid $main-blue;
       }
