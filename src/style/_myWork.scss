@@ -3,9 +3,18 @@
   &_projects_wrapper {
     max-width: $text-width;
     margin: 0 auto;
-
+    @media screen and (min-width: 1000px) {
+      .myWork_project:nth-child(even) {
+        .project_img {
+          order: 2;
+        }
+        .project_title {
+          text-align: right;
+        }
+      }
+    }
     .myWork_project {
-      margin: 45px 0;
+      margin: 60px 0 40px 0;
       border-bottom: 1.5px solid gray;
       display: flex;
       flex-direction: column;
@@ -25,6 +34,9 @@
         width: 100%;
         max-width: 600px;
         text-align: left;
+        @media screen and (min-width: 1000px) {
+          margin: 0 100px;
+        }
       }
       .project_img {
         position: relative;
@@ -33,9 +45,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
 
         @media screen and (min-width: 1000px) {
-          width: 60%;
+          width: 55%;
         }
 
         &:hover .project_links {
@@ -89,7 +102,8 @@
       .porject_content {
         @media screen and (min-width: 1000px) {
           width: 35%;
-          margin-left: 30px;
+          margin: 0 30px;
+          order: 1;
         }
         .project_technologies {
           text-align: right;
