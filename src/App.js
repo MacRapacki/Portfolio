@@ -5,15 +5,25 @@ import Header from "./components/header/Header";
 import KeySkills from "./components/keySkills/KeySkills";
 import MyWork from "./components/myWork/MyWork";
 
+import Slide from "react-reveal/Slide";
+
 function App() {
   return (
     <>
-      <Header />{" "}
+      <Header />
       <main>
-        <About />
-        <KeySkills />
-        <MyWork />
-        <Contact />
+        <Slide right>
+          <About />
+        </Slide>
+        <Slide left>
+          <KeySkills />
+        </Slide>
+        <Slide right>
+          <MyWork />
+        </Slide>
+        <Slide left>
+          <Contact />
+        </Slide>
         <Footer />
       </main>
     </>
