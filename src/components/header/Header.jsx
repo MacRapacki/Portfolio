@@ -44,7 +44,13 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button type="button" className="header_btn" onClick={handleNavBtn}>
+        <button
+          type="button"
+          className="header_btn"
+          onClick={handleNavBtn}
+          aria-label={navActive ? "i am open" : "i am closed "}
+          aria-expanded={navActive}
+        >
           <i class="fas fa-bars"></i>
         </button>
       </nav>
