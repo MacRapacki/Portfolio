@@ -70,7 +70,7 @@ section {
           align-items: center;
 }
 
-section:nth-child(odd) {
+section.bg {
   background-color: #fafafa;
 }
 

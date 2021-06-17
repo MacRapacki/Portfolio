@@ -4,7 +4,7 @@ import { useMyWorkContainer } from "./myWorkContainer";
 const MyWork = () => {
   const { projects } = useMyWorkContainer();
   return (
-    <section className="myWork" id="04">
+    <section className="myWork bg" id="04">
       <h2>My Work</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
