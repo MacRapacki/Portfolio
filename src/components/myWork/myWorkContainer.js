@@ -25,8 +25,7 @@ export const useMyWorkContainer = () => {
     },
     {
       name: "Landing Page",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+      description: "This project is simple landing page.",
       imgURL: LandingPageImg,
       demoURL: "https://macrapacki.github.io/Landing-Page/",
       codeURL: "https://github.com/MacRapacki/Landing-Page",
@@ -35,7 +34,7 @@ export const useMyWorkContainer = () => {
     {
       name: "Pet Clinic",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+        "This project is a website for pet clinic in Poland. The project was made in gatsby, it hosting by Netlify and it works with DatoCms.",
       imgURL: PetClinic,
       demoURL: "https://macrapacki-petclinic.netlify.app/",
       codeURL: "https://github.com/MacRapacki/pet-clinic-gatsby",
@@ -59,7 +58,7 @@ export const useMyWorkContainer = () => {
     {
       name: "Weight Loss Planer",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+        "This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight.",
       imgURL: WeightLossPlanner,
       demoURL: "https://macrapacki.github.io/Weight-Loss-Planner/",
       codeURL: "https://github.com/MacRapacki/Weight-Loss-Planner",
