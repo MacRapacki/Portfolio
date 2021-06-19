@@ -24,8 +24,13 @@ header {
     height: $nav-height;
     background-color: transparent;
     z-index: 2;
+    transition: 0.25s linear;
     @media screen and (min-width: 1000px) {
       background-color: white;
+      transform: translateY(-100%);
+      &.active {
+        transform: translateY(0);
+      }
     }
 
     ul {

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useHeaderContainer } from "./headerContainer";
 
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
+  const [hideNav, setHideNav] = useState(false);
 
   const { copyEmailToClipboard, showCopyMessage, isTextCopied } =
     useHeaderContainer();
@@ -12,10 +13,34 @@ const Header = () => {
     setNavActive(!navActive);
   };
 
+  let prevScrollPosition = 0;
+
+  const handleNavOnScroll = () => {
+    let currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition <= 400) {
+      setHideNav(false);
+      prevScrollPosition = currentScrollPosition;
+    } else {
+      if (prevScrollPosition < currentScrollPosition) {
+        setHideNav(true);
+        prevScrollPosition = currentScrollPosition;
+      } else {
+        setHideNav(false);
+        prevScrollPosition = currentScrollPosition;
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleNavOnScroll);
+    return () => window.removeEventListener("scroll", handleNavOnScroll);
+  }, []);
+
   return (
     <header id="01">
       <div className="header-bg"></div>
-      <nav>
+      <nav className={!hideNav && "active"}>
         <ul className={`${navActive && "active"}`}>
           <li>
             <a href="#01" onClick={handleNavBtn}>

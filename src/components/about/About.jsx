@@ -9,7 +9,10 @@ const About = () => {
         <img src={Pic} alt="developer" />
       </div>
       <div className="about_text_container">
-        <h4>My name is Maciej Rapacki.</h4>
+        <h4>
+          My name is
+          <span className="about_text_container--name"> Maciej Rapacki</span>.
+        </h4>
         <h3>I'm Self-Taught Front End Developer.</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,

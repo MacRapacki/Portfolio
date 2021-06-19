@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 span,
 a,
 p,
@@ -20,7 +24,7 @@ li {
 h2 {
   position: relative;
   font-size: 35px;
-  margin: 30px 0;
+  margin: 35px 0;
   text-align: center;
   z-index: 1;
   color: white;
@@ -101,11 +105,19 @@ header nav {
   height: 3.5rem;
   background-color: transparent;
   z-index: 2;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
 @media screen and (min-width: 1000px) {
   header nav {
     background-color: white;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  header nav.active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -397,6 +409,11 @@ header .header_text-container .header_social ul li a i {
 .about_text_container {
   max-width: 1200px;
   margin-top: 30px;
+}
+
+.about_text_container--name {
+  color: #4169e1;
+  font-size: 20px;
 }
 
 .about_text_container h3 {
