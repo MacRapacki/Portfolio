@@ -9,7 +9,7 @@ export const useMyWorkContainer = () => {
     {
       name: "saro",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+        "This is a open source project i work with. My main contributions are implementing new components and layout. This project show me how to work with team, many libraries (redux, react-tostify, formik and more..) and show me how to use constants, object destructuring and atomic design principles.",
       imgURL: SaroImg,
       demoURL: "https://dev--i-saro.netlify.app/",
       codeURL: "https://github.com/michalskirobert/saro-react",
@@ -49,7 +49,7 @@ export const useMyWorkContainer = () => {
     {
       name: "Premier Leagues Stats",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also",
+        "This website is for Premier League fans. You can check there basics statistics. Website has been made to work with API.",
       imgURL: PremierLeagueStats,
       demoURL: "https://macrapacki.github.io/Premier-League-stats/",
       codeURL: "https://github.com/MacRapacki/Premier-League-stats",

@@ -9,11 +9,8 @@ const KeySkills = () => {
     <section className="key_skills" id="03">
       <div className="key_skills_text">
         <h2>Key Skills</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          veritatis vel pariatur repellendus ex alias in! Optio facilis autem
-          inventore nihil debitis, excepturi rem, ratione obcaecati cumque
-          impedit praesentium ipsam?
+        <p className="subtitle">
+          Have a look on the technologies i have been work with.
         </p>
       </div>
       <div className="key_skills_cards">

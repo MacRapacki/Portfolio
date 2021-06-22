@@ -6,11 +6,8 @@ const MyWork = () => {
   return (
     <section className="myWork bg" id="04">
       <h2>My Work</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-        voluptatibus quibusdam tempore debitis mollitia molestias ex
-        repudiandae, magni dolores id iusto eveniet vitae. Delectus eaque
-        molestiae itaque cumque facere odit.
+      <p className="subtitle">
+        In this section You can check my projects and technologies i work with.
       </p>
       <div className="myWork_projects_wrapper">
         {projects.map(

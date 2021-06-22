@@ -19,6 +19,7 @@ li {
   font-family: "Poppins", "Montserrat", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 18px;
 }
 
 h2 {
@@ -76,6 +77,10 @@ section {
 
 section.bg {
   background-color: #fafafa;
+}
+
+.subtitle {
+  margin: 15px 0;
 }
 
 header {

@@ -15,10 +15,12 @@ const About = () => {
         </h4>
         <h3>I'm Self-Taught Front End Developer.</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
-          ad? Sunt, maxime voluptatem! Tenetur atque culpa beatae nihil quis
-          quos fugit sapiente, mollitia optio maiores vero, quisquam quod
-          praesentium. Sunt.
+          I'm a self-taugh, aspiring front-end developer
+          who learns quickly, is ambitious and is not
+          afraid of new challenges. The more I learn the
+          more I am passionate about programming and
+          a full-time job will help me develop my skills
+          and gain professional experience. 
         </p>
         <a href="#05" className="about_contact_btn">
           Hire me
@@ -29,3 +31,4 @@ const About = () => {
 };
 
 export default About;
+ 
