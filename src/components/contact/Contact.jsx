@@ -6,7 +6,7 @@ import { useHeaderContainer } from "../header/headerContainer";
 import {  toast } from "react-toastify";
 
 const Contact = () => {
-  const { copyEmailToClipboard, showCopyMessage, isTextCopied } =
+  const { copyEmailToClipboard} =
     useHeaderContainer();
 
   return (
@@ -37,7 +37,6 @@ const Contact = () => {
           </li>
           <li
             onClick={() => {
-              showCopyMessage();
               copyEmailToClipboard();
             }}
           >
