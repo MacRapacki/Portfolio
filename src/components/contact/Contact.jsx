@@ -3,12 +3,15 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import { useHeaderContainer } from "../header/headerContainer";
 
+import {  toast } from "react-toastify";
+
 const Contact = () => {
   const { copyEmailToClipboard, showCopyMessage, isTextCopied } =
     useHeaderContainer();
 
   return (
     <section className="contact" id="05">
+      
       <h2>Contact</h2>
       <ContactForm />
       <div className="contact_social">
@@ -38,11 +41,6 @@ const Contact = () => {
               copyEmailToClipboard();
             }}
           >
-            {isTextCopied && (
-              <div className="header_social_email_msg">
-                mac.rapacki@gmail.com Copied!
-              </div>
-            )}
             <div>
               <i class="fas fa-envelope"></i>
             </div>

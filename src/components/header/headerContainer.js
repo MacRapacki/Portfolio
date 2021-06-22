@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React  from "react";
+import {  toast } from 'react-toastify';
 
 export const useHeaderContainer = () => {
-  const [isTextCopied, setIsTextCopied] = useState(false);
-  const [currentScrollPosition, setCurrentScrollPosition] = useState(0);
-  const [hideNav, setHideNav] = useState(false);
+ 
 
   const copyEmailToClipboard = () => {
     const email = "mac.rapacki@gmail.com";
@@ -13,34 +12,20 @@ export const useHeaderContainer = () => {
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
+    toast.success('mac.rapacki@gmail.com Copied!', {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
   };
 
-  const showCopyMessage = () => {
-    setIsTextCopied(true);
-    setTimeout(() => {
-      setIsTextCopied(false);
-    }, 2000);
-  };
-
-  // const handleScrollEvent = () => {
-  //   window.addEventListener("scroll", () => {
-  //     setCurrentScrollPosition(window.scrollY);
-  //   });
-  // };
-
-  const handleNavOnScroll = () => {
-    setCurrentScrollPosition(window.scrollY);
-    console.log(currentScrollPosition);
-    // currentScrollPosition > 200 ? setHideNav(true) : setHideNav(false);
-    // console.log(hideNav);
-  };
 
   return {
     copyEmailToClipboard,
-    showCopyMessage,
-    isTextCopied,
-    handleNavOnScroll,
-    hideNav,
-    currentScrollPosition,
+    
   };
 };

@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 
 import { useHeaderContainer } from "./headerContainer";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
   const [hideNav, setHideNav] = useState(false);
 
-  const { copyEmailToClipboard, showCopyMessage, isTextCopied } =
+  const { copyEmailToClipboard } =
     useHeaderContainer();
 
   const handleNavBtn = () => {
@@ -39,6 +42,7 @@ const Header = () => {
 
   return (
     <header id="01">
+   
       <div className="header-bg"></div>
       <nav className={!hideNav && "active"}>
         <ul className={`${navActive && "active"}`}>
@@ -107,15 +111,11 @@ const Header = () => {
             </li>
             <li
               onClick={() => {
-                showCopyMessage();
                 copyEmailToClipboard();
+           
               }}
             >
-              {isTextCopied && (
-                <div className="header_social_email_msg">
-                  mac.rapacki@gmail.com Copied!
-                </div>
-              )}
+           
               <div>
                 <i class="fas fa-envelope"></i>
               </div>
@@ -123,6 +123,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <ToastContainer/>
     </header>
   );
 };

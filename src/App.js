@@ -7,6 +7,8 @@ import MyWork from "./components/myWork/MyWork";
 
 import Slide from "react-reveal/Slide";
 
+
+
 function App() {
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
         <Slide left>
           <Contact />
         </Slide>
+        
         <Footer />
       </main>
     </>
