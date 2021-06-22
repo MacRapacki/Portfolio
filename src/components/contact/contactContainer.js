@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 export const useContactContainer = () => {
   const sendEmail = async (formValues) => {
@@ -11,10 +12,10 @@ export const useContactContainer = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast.success("Thank You for Your message. I will contact with You soon.");
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Something went wrong. Try again later.");
         }
       );
   };
