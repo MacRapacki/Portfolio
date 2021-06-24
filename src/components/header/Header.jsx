@@ -4,6 +4,7 @@ import { useHeaderContainer } from "./headerContainer";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Fade from "react-reveal/Fade";
 
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
@@ -84,18 +85,19 @@ const Header = () => {
         </button>
       </nav>
       <div className="header_text-container">
-        <span>Hi! I'm Maciej.</span>
+      <Fade delay={250}> <span>Hi! I'm Maciej.</span> </Fade>
         <h1>
-          <span>Front End Developer</span>
+         <Fade delay={600}><span>Front End Developer</span></Fade> 
         </h1>
         <div className="header_social">
+        <Fade top cascade delay={1000}>   
           <ul>
-            <li>
+           <li>
               <a href="https://www.facebook.com/maciej.rapacki/" target="blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
-            <li>
+             <li>
               <a
                 href="https://www.linkedin.com/in/maciej-rapacki-30b653142/"
                 target="blank"
@@ -104,15 +106,14 @@ const Header = () => {
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
-            <li>
+             <li>
               <a href="https://github.com/MacRapacki" target="blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
-            <li
+              <li
               onClick={() => {
                 copyEmailToClipboard();
-           
               }}
             >
            
@@ -121,6 +122,7 @@ const Header = () => {
               </div>
             </li>
           </ul>
+          </Fade> 
         </div>
       </div>
       <ToastContainer/>
