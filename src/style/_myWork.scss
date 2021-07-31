@@ -116,4 +116,18 @@
       }
     }
   }
+  &_ghLink {
+    border: 2px solid $main-blue;
+    border-radius: 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: $main-blue;
+    transition: 0.2s linear;
+
+    &:hover {
+      background-color: white;
+      color: $main-blue;
+    }
+  }
 }

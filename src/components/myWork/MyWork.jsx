@@ -48,6 +48,13 @@ const MyWork = () => {
           }
         )}
       </div>
+      <a
+        className="myWork_ghLink"
+        href="https://github.com/MacRapacki"
+        target="blank"
+      >
+        Check more my projects on GitHub.
+      </a>
     </section>
   );
 };
