@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import { useHeaderContainer } from "./headerContainer";
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Fade from "react-reveal/Fade";
 
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
   const [hideNav, setHideNav] = useState(false);
+  const navRef = useRef(null);
 
-  const { copyEmailToClipboard } =
-    useHeaderContainer();
+  const { copyEmailToClipboard } = useHeaderContainer();
 
   const handleNavBtn = () => {
     setNavActive(!navActive);
@@ -36,17 +36,28 @@ const Header = () => {
     }
   };
 
+  const handleOpenedNav = (event) => {
+    console.log(navActive);
+    if (!navRef.current.contains(event.target)) {
+      setNavActive(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleNavOnScroll);
     return () => window.removeEventListener("scroll", handleNavOnScroll);
   }, []);
 
+  useEffect(() => {
+    document.addEventListener("click", handleOpenedNav);
+    return () => window.removeEventListener("click", handleOpenedNav);
+  }, []);
+
   return (
     <header id="01">
-   
       <div className="header-bg"></div>
-      <nav className={!hideNav && "active"}>
-        <ul className={`${navActive && "active"}`}>
+      <nav className={!hideNav && "active"} ref={navRef}>
+        <ul className={navActive && "active"}>
           <li>
             <a href="#01" onClick={handleNavBtn}>
               Home
@@ -64,9 +75,8 @@ const Header = () => {
           </li>
           <li>
             <a href="#04" onClick={handleNavBtn}>
-              My Wor
+              My Work
             </a>
-            k
           </li>
           <li>
             <a href="#05" onClick={handleNavBtn}>
@@ -85,47 +95,54 @@ const Header = () => {
         </button>
       </nav>
       <div className="header_text-container">
-      <Fade delay={250}> <span>Hi! I'm Maciej.</span> </Fade>
+        <Fade delay={250}>
+          {" "}
+          <span>Hi! I'm Maciej.</span>{" "}
+        </Fade>
         <h1>
-         <Fade delay={600}><span>Front End Developer</span></Fade> 
+          <Fade delay={600}>
+            <span>Front End Developer</span>
+          </Fade>
         </h1>
         <div className="header_social">
-        <Fade top cascade delay={1000}>   
-          <ul>
-           <li>
-              <a href="https://www.facebook.com/maciej.rapacki/" target="blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-             <li>
-              <a
-                href="https://www.linkedin.com/in/maciej-rapacki-30b653142/"
-                target="blank"
-              >
-                {" "}
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-             <li>
-              <a href="https://github.com/MacRapacki" target="blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
+          <Fade top cascade delay={1000}>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/maciej.rapacki/"
+                  target="blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maciej-rapacki-30b653142/"
+                  target="blank"
+                >
+                  {" "}
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/MacRapacki" target="blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
               <li
-              onClick={() => {
-                copyEmailToClipboard();
-              }}
-            >
-           
-              <div>
-                <i class="fas fa-envelope"></i>
-              </div>
-            </li>
-          </ul>
-          </Fade> 
+                onClick={() => {
+                  copyEmailToClipboard();
+                }}
+              >
+                <div>
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </li>
+            </ul>
+          </Fade>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </header>
   );
 };
