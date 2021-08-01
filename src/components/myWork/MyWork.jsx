@@ -53,7 +53,7 @@ const MyWork = () => {
         href="https://github.com/MacRapacki"
         target="blank"
       >
-        Check more my projects on GitHub.
+        Check out more of my projects on GitHub.
       </a>
     </section>
   );

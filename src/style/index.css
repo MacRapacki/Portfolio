@@ -713,6 +713,7 @@ header .header_text-container .header_social ul li a i {
   background-color: #4169e1;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  text-align: center;
 }
 
 .myWork_ghLink:hover {
