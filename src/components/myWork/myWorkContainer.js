@@ -25,7 +25,7 @@ export const useMyWorkContainer = () => {
     },
     {
       name: "Landing Page",
-      description: "This project is simple landing page.",
+      description: "This project is simple, responsive landing page.",
       imgURL: LandingPageImg,
       demoURL: "https://macrapacki.github.io/Landing-Page/",
       codeURL: "https://github.com/MacRapacki/Landing-Page",
