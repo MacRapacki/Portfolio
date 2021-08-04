@@ -11,10 +11,21 @@ const MyWork = () => {
       </p>
       <div className="myWork_projects_wrapper">
         {projects.map(
-          ({ name, description, imgURL, demoURL, codeURL, technologies }) => {
+          ({
+            name,
+            description,
+            imgURL,
+            demoURL,
+            codeURL,
+            technologies,
+            status,
+          }) => {
             return (
               <div className="myWork_project">
-                <h5 className="project_title">{name.toUpperCase()}</h5>
+                <h5 className="project_title">
+                  {name.toUpperCase()}{" "}
+                  <span className="project_title_status">({status})</span>
+                </h5>
                 <div className="project_img">
                   {" "}
                   <img src={imgURL} alt="project screenshot" />{" "}

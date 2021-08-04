@@ -22,6 +22,7 @@ export const useMyWorkContainer = () => {
         "styled components",
         "reactstrap",
       ],
+      status: "in progress",
     },
     {
       name: "Landing Page",
@@ -30,6 +31,7 @@ export const useMyWorkContainer = () => {
       demoURL: "https://macrapacki.github.io/Landing-Page/",
       codeURL: "https://github.com/MacRapacki/Landing-Page",
       technologies: ["html", "sass", "javascript"],
+      status: "finished",
     },
     {
       name: "Pet Clinic",
@@ -45,6 +47,7 @@ export const useMyWorkContainer = () => {
         "datocms",
         "netlify",
       ],
+      status: "finished/needs rework",
     },
     {
       name: "Premier Leagues Stats",
@@ -54,6 +57,7 @@ export const useMyWorkContainer = () => {
       demoURL: "https://macrapacki.github.io/Premier-League-stats/",
       codeURL: "https://github.com/MacRapacki/Premier-League-stats",
       technologies: ["react", "api", "sass"],
+      status: "in progress",
     },
     {
       name: "Weight Loss Planer",
@@ -63,6 +67,7 @@ export const useMyWorkContainer = () => {
       demoURL: "https://macrapacki.github.io/Weight-Loss-Planner/",
       codeURL: "https://github.com/MacRapacki/Weight-Loss-Planner",
       technologies: ["html", "css", "javascript"],
+      status: "finished",
     },
   ];
   return { projects };
