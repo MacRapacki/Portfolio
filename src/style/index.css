@@ -589,6 +589,11 @@ header .header_text-container .header_social ul li a i {
   text-align: left;
 }
 
+.myWork_projects_wrapper .myWork_project .project_title_status {
+  color: black;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1000px) {
   .myWork_projects_wrapper .myWork_project .project_title {
     margin: 0 100px;
