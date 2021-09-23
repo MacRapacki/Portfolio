@@ -3,9 +3,21 @@ import LandingPageImg from "../../images/myWork/landingPage.png";
 import PetClinic from "../../images/myWork/petClinic.png";
 import PremierLeagueStats from "../../images/myWork/PremierLeagueStats.png";
 import WeightLossPlanner from "../../images/myWork/weightLossPlanner.png";
+import NextLanding from "../../images/myWork/nextLanding.png";
 
 export const useMyWorkContainer = () => {
   const projects = [
+    {
+      name: " NextJS - landing page",
+      description:
+        "This is a landing page created with NextJS. Website is responsive on all devices.",
+      imgURL: NextLanding,
+      demoURL: "https://next-js-landing.vercel.app/",
+      codeURL: "https://github.com/MacRapacki/NextJS--landing",
+      technologies: ["react", "nextJS", "css modules"],
+      status: "finished",
+    },
+
     {
       name: "saro",
       description:
