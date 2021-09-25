@@ -4,7 +4,7 @@ import FigmaImg from "../../images/skills/icons8-figma-100.png";
 import GitImg from "../../images/skills/icons8-git-100.png";
 import JavascriptImg from "../../images/skills/icons8-javascript-100.png";
 import ReactImg from "../../images/skills/icons8-react-native-100.png";
-import ReduxImg from "../../images/skills/icons8-redux-100.png";
+// import ReduxImg from "../../images/skills/icons8-redux-100.png";
 import SassImg from "../../images/skills/icons8-sass-100.png";
 
 export const useKeySkillsContainer = () => {
@@ -37,10 +37,10 @@ export const useKeySkillsContainer = () => {
       img: FigmaImg,
       name: "Figma",
     },
-    {
-      img: ReduxImg,
-      name: "Redux",
-    },
+    // {
+    //   img: ReduxImg,
+    //   name: "Redux",
+    // },
   ];
 
   return {
