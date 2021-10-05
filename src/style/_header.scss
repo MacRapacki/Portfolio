@@ -98,6 +98,60 @@ header {
           text-decoration: none;
           color: black;
         }
+
+        a.cv {
+          color: black;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          border-radius: 50%;
+          font-weight: 900;
+          transition: 0.15s ease-in;
+
+          &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 4px;
+            background-color: $main-blue;
+            border-radius: 10px;
+            z-index: -1;
+            transition: 0.15s ease-in;
+          }
+
+          &::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 0px;
+            height: 0px;
+            background-color: $main-blue;
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.15s ease-in;
+          }
+
+          &:hover {
+            color: white;
+            // background-color: $main-blue;
+            &::before {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+
+      li:nth-last-child(1) {
+        &::after,
+        &::before {
+          display: none;
+        }
       }
     }
 

@@ -6,6 +6,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Fade from "react-reveal/Fade";
 
+import CV from "../../cv/Maciej-Rapacki-CV-2021.pdf";
+
 const Header = () => {
   const [navActive, setNavActive] = useState(false);
   const [hideNav, setHideNav] = useState(false);
@@ -81,6 +83,17 @@ const Header = () => {
           <li>
             <a href="#05" onClick={handleNavBtn}>
               Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href={CV}
+              target="_blank"
+              rel="noreferrer"
+              download
+              className="cv"
+            >
+              CV
             </a>
           </li>
         </ul>
