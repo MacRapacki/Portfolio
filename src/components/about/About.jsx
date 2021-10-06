@@ -18,7 +18,7 @@ const About = () => {
         <h3>I'm Self-Taught Front End Developer.</h3>
         <p style={{ whiteSpace: "pre-wrap" }}>{aboutMeText}</p>
         <a href="#05" className="about_contact_btn">
-          Hire me
+          Contact me
         </a>
       </div>
     </section>
