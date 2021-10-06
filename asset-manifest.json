@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3af36756.chunk.css",
+    "main.css": "/Portfolio/static/css/main.5789ed66.chunk.css",
     "main.js": "/Portfolio/static/js/main.022b8a3f.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.022b8a3f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f746025f.js",
@@ -12,7 +12,7 @@
     "static/js/3.4e4a538c.chunk.js.map": "/Portfolio/static/js/3.4e4a538c.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.97503911.chunk.css.map": "/Portfolio/static/css/2.97503911.chunk.css.map",
-    "static/css/main.3af36756.chunk.css.map": "/Portfolio/static/css/main.3af36756.chunk.css.map",
+    "static/css/main.5789ed66.chunk.css.map": "/Portfolio/static/css/main.5789ed66.chunk.css.map",
     "static/js/2.d67968f9.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.d67968f9.chunk.js.LICENSE.txt",
     "static/media/Maciej-Rapacki-CV-2021.b8481656.pdf": "/Portfolio/static/media/Maciej-Rapacki-CV-2021.b8481656.pdf",
     "static/media/PremierLeagueStats.ec46d66e.png": "/Portfolio/static/media/PremierLeagueStats.ec46d66e.png",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.f746025f.js",
     "static/css/2.97503911.chunk.css",
     "static/js/2.d67968f9.chunk.js",
-    "static/css/main.3af36756.chunk.css",
+    "static/css/main.5789ed66.chunk.css",
     "static/js/main.022b8a3f.chunk.js"
   ]
 }
