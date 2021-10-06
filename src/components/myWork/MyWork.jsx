@@ -50,7 +50,7 @@ const MyWork = () => {
                   <p className="project_description">{description}</p>
                   <p className="project_technologies">
                     {technologies.map((item) => (
-                      <span>#{item}, </span>
+                      <span>{item}, </span>
                     ))}
                   </p>
                 </div>
