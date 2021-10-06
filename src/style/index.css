@@ -466,6 +466,12 @@ header .header_text-container .header_social ul li a i {
 
 .about_image img {
   width: 100%;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.about h2 {
+  margin: 35px 0 0 0;
 }
 
 .about_text_container {

@@ -3,12 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   &_image {
     max-width: 600px;
     img {
       width: 100%;
+      transform: translateY(-30px);
     }
   }
+
+  h2 {
+    margin: 35px 0 0 0;
+  }
+
   &_text_container {
     max-width: $text-width;
     margin-top: 30px;
