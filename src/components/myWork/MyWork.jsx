@@ -7,7 +7,7 @@ const MyWork = () => {
     <section className="myWork bg" id="04">
       <h2>My Work</h2>
       <p className="subtitle">
-        In this section You can check my projects and technologies i work with.
+        In this section, You can check my projects and technologies I work with.
       </p>
       <div className="myWork_projects_wrapper">
         {projects.map(
