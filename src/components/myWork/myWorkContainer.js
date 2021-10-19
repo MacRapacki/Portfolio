@@ -4,19 +4,20 @@ import PetClinic from "../../images/myWork/petClinic.png";
 import PremierLeagueStats from "../../images/myWork/PremierLeagueStats.png";
 import WeightLossPlanner from "../../images/myWork/weightLossPlanner.png";
 import NextLanding from "../../images/myWork/nextLanding.png";
+import eShop from "../../images/myWork/eShop.png";
 
 export const useMyWorkContainer = () => {
   const projects = [
-    // {
-    //   name: "eShop",
-    //   description:
-    //     "eShop React app that fetches API allowing users to search for their favourite items by categories. User can add items to the basket, check total cost of items and remove items from the basket.   I used React functional components along with hooks (useState, useEffect, useContext*), fetch API, SCSS preprocessor for styling and  redux-toolkit for state managment.",
-    //   imgURL: NextLanding,
-    //   demoURL: "https://next-js-landing.vercel.app/",
-    //   codeURL: "https://github.com/MacRapacki/NextJS--landing",
-    //   technologies: ["react", "scss", "redux-toolkit", "api", ],
-    //   status: "finished",
-    // },
+    {
+      name: "eShop",
+      description:
+        "eShop React app that fetches API allowing users to search for their favorite items by categories. Users can add items to the basket, check the total cost of items, and remove items from the basket. I have used React functional components along with hooks (useState, useEffect, useContext*), fetch API, SCSS preprocessor for styling, and redux-toolkit for state management to replace Context API.",
+      imgURL: eShop,
+      demoURL: "https://macrapacki.github.io/eShop",
+      codeURL: "https://github.com/MacRapacki/eShop",
+      technologies: ["react", "styled-components", "redux-toolkit", "api"],
+      status: "in progress",
+    },
 
     {
       name: " NextJS - landing page",
@@ -49,7 +50,7 @@ export const useMyWorkContainer = () => {
     // },
     {
       name: "Landing Page",
-      description: "This project is simple, responsive landing page.",
+      description: "This project is a simple, responsive landing page.",
       imgURL: LandingPageImg,
       demoURL: "https://macrapacki.github.io/Landing-Page/",
       codeURL: "https://github.com/MacRapacki/Landing-Page",
