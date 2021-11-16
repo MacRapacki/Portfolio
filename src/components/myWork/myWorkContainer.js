@@ -11,7 +11,7 @@ export const useMyWorkContainer = () => {
     {
       name: "eShop",
       description:
-        "eShop React app that fetches API allowing users to search for their favorite items by categories. Users can add items to the basket, check the total cost of items, and remove items from the basket. I have used React functional components along with hooks (useState, useEffect, useContext*), fetch API, SCSS preprocessor for styling, and redux-toolkit for state management to replace Context API.",
+        "eShop React app that fetches API allowing users to search for their favorite items by categories. Users can add items to the basket, check the total cost of items, and remove items from the basket. I have used React functional components along with hooks (useState, useEffect, useContext*), fetch API, styled components styling, and redux-toolkit for state management to replace Context API.",
       imgURL: eShop,
       demoURL: "https://macrapacki.github.io/eShop",
       codeURL: "https://github.com/MacRapacki/eShop",
