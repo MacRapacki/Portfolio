@@ -5,9 +5,20 @@ import PremierLeagueStats from "../../images/myWork/PremierLeagueStats.png";
 import WeightLossPlanner from "../../images/myWork/weightLossPlanner.png";
 import NextLanding from "../../images/myWork/nextLanding.png";
 import eShop from "../../images/myWork/eShop.png";
+import NewsAlbums from "../../images/myWork/news-albums.png";
 
 export const useMyWorkContainer = () => {
   const projects = [
+    {
+      name: "News and Albums",
+      description:
+        "This project has been created from Figma mockup, is fully responsive for all devices. Users can see posts, comments, and albums fetched from fake API. Users can open a single post to check details and comments.  I have used React functional components along with hooks, fetch API, styled-components, and typescript.",
+      imgURL: NewsAlbums,
+      demoURL: "https://macrapacki.github.io/news-albums/",
+      codeURL: "https://github.com/MacRapacki/news-albums",
+      technologies: ["react", "typescript", "styled components", "API"],
+      status: "finished",
+    },
     {
       name: "eShop",
       description:
@@ -83,16 +94,16 @@ export const useMyWorkContainer = () => {
       technologies: ["react", "api", "sass"],
       status: "in progress",
     },
-    {
-      name: "Weight Loss Planer",
-      description:
-        "This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight.",
-      imgURL: WeightLossPlanner,
-      demoURL: "https://macrapacki.github.io/Weight-Loss-Planner/",
-      codeURL: "https://github.com/MacRapacki/Weight-Loss-Planner",
-      technologies: ["html", "css", "javascript"],
-      status: "finished",
-    },
+    // {
+    //   name: "Weight Loss Planer",
+    //   description:
+    //     "This project is simple app to check Your BMI and You will get know how many kilograms per day You need to loose to get Your desire weight.",
+    //   imgURL: WeightLossPlanner,
+    //   demoURL: "https://macrapacki.github.io/Weight-Loss-Planner/",
+    //   codeURL: "https://github.com/MacRapacki/Weight-Loss-Planner",
+    //   technologies: ["html", "css", "javascript"],
+    //   status: "finished",
+    // },
   ];
   return { projects };
 };
