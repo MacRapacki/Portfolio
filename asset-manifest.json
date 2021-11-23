@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.9fd177ce.chunk.css",
-    "main.js": "/Portfolio/static/js/main.faa8abfc.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.faa8abfc.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.c7376204.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c7376204.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.f746025f.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f746025f.js.map",
     "static/css/2.97503911.chunk.css": "/Portfolio/static/css/2.97503911.chunk.css",
@@ -20,6 +20,7 @@
     "static/media/eShop.4f13d89a.png": "/Portfolio/static/media/eShop.4f13d89a.png",
     "static/media/landingPage.c7565221.png": "/Portfolio/static/media/landingPage.c7565221.png",
     "static/media/me.7e1100e0.png": "/Portfolio/static/media/me.7e1100e0.png",
+    "static/media/news-albums.97f8b092.png": "/Portfolio/static/media/news-albums.97f8b092.png",
     "static/media/nextLanding.73db8668.png": "/Portfolio/static/media/nextLanding.73db8668.png",
     "static/media/petClinic.c43d0258.png": "/Portfolio/static/media/petClinic.c43d0258.png",
     "static/media/saro.2d4449ad.png": "/Portfolio/static/media/saro.2d4449ad.png",
@@ -30,6 +31,6 @@
     "static/css/2.97503911.chunk.css",
     "static/js/2.d67968f9.chunk.js",
     "static/css/main.9fd177ce.chunk.css",
-    "static/js/main.faa8abfc.chunk.js"
+    "static/js/main.c7376204.chunk.js"
   ]
 }
